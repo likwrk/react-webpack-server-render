@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "server": "webpack-dev-server",
+    "webpack": "webpack -d  --display-error-details",
+    "webpack:prod": "webpack -d -p  --display-error-details",
+    "webpack:watch": "webpack -d -w  --display-error-details",
+    "prerender": "babel lib/ --presets=babel-preset-es2015,babel-preset-react --plugins=transform-object-assign --out-dir src/",
+    "render": "node src/server-render.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "webpack": "beta",
+    "webpack-dev-server": "beta",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
+  }
+}
